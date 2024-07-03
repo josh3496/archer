@@ -98,6 +98,7 @@
     font-family: var(--font-family);
     font-weight: 600;
     font-size: var(--heading-one-size);
+    line-height: calc(var(--heading-one-size) * 1.2);
   }
 
   .container {
