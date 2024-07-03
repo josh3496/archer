@@ -68,6 +68,11 @@
     isolation: isolate;
   }
   /* Project */
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
 
   header {
     position: sticky;
@@ -86,14 +91,19 @@
     width: 50px;
     aspect-ratio: 1;
   }
+  footer {
+    background-color: var(--grey-500);
+    margin-top: auto;
+  }
 
   .cmp-footer {
     width: 100%;
     max-width: 1152px;
     padding-inline: 12px;
     margin-inline: auto;
-    padding-block: 12px;
+    padding-block: 24px;
   }
+  
   h1 {
     font-family: var(--font-family);
     font-weight: 600;
