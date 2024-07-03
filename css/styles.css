@@ -20,6 +20,10 @@
    
     /* Headings */
     --heading-one-size: var(--step-5);
+    --heading-two-size: var(--step-4);
+
+    /* Body Copy */
+    --body-size: var(--step-0);
 }
 /*
   1. Use a more-intuitive box-sizing model.
@@ -79,6 +83,7 @@
     width: 100%;
     top: 0;
     border-bottom: 1px solid #f7f7f7;
+    background-color: #ffffff;
   }
   .cmp-header {
     width: 100%;
@@ -92,7 +97,7 @@
     aspect-ratio: 1;
   }
   footer {
-    background-color: var(--grey-500);
+    background: linear-gradient(0deg, rgba(153,153,153,1) 0%, rgba(255,255,255,1) 100%);
     margin-top: auto;
   }
 
@@ -103,13 +108,32 @@
     margin-inline: auto;
     padding-block: 24px;
   }
-  
+
   h1 {
     font-family: var(--font-family);
     font-weight: 600;
     font-size: var(--heading-one-size);
     line-height: calc(var(--heading-one-size) * 1.2);
+    text-wrap: balance;
+    margin-block-end: calc(var(--heading-one-size) * 1.5);
   }
+  h2 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: var(--heading-two-size);
+    line-height: calc(var(--heading-two-size) * 1.2);
+    text-wrap: balance;
+  }
+  p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: var(--body-size);
+    line-height: calc(var(--body-size) * 1.2);
+    text-wrap: balance;
+  }
+.text-center {
+    text-align: center;
+}
 
   .container {
     width: 100%;
@@ -124,4 +148,20 @@
 
   .container--primary {
     padding-block: 128px;
+  }
+
+  .grid .cmp-grid {
+    display: grid;
+  }
+  .grid-two .cmp-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid--vertical-center .cmp-grid{
+    align-items: center;
+  }
+  .grid--horizontal-center .cmp-grid {
+    justify-items: center;
+  }
+  .grid--horizontal-center .cmp-grid > * {
+    text-align: center;
   }
