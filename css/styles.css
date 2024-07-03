@@ -7,8 +7,19 @@
 
     /* Font */
     --font-family: 'Roboto', Helvetica, Arial, sans-serif;
+   
+    /* Font Size */
+    --step--2: clamp(0.6944rem, 0.6856rem + 0.0444vi, 0.72rem);
+    --step--1: clamp(0.8333rem, 0.8101rem + 0.1159vi, 0.9rem);
+    --step-0: clamp(1rem, 0.9565rem + 0.2174vi, 1.125rem);
+    --step-1: clamp(1.2rem, 1.1283rem + 0.3587vi, 1.4063rem);
+    --step-2: clamp(1.44rem, 1.3295rem + 0.5527vi, 1.7578rem);
+    --step-3: clamp(1.728rem, 1.5648rem + 0.8161vi, 2.1973rem);
+    --step-4: clamp(2.0736rem, 1.8395rem + 1.1704vi, 2.7466rem);
+    --step-5: clamp(2.4883rem, 2.1597rem + 1.6433vi, 3.4332rem);
+   
     /* Headings */
-    --heading-one-size: 48px;
+    --heading-one-size: var(--step-5);
 }
 /*
   1. Use a more-intuitive box-sizing model.
@@ -85,6 +96,8 @@
   }
   h1 {
     font-family: var(--font-family);
+    font-weight: 600;
+    font-size: var(--heading-one-size);
   }
 
   .container {
