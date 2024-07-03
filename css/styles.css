@@ -56,3 +56,44 @@
   #root, #__next {
     isolation: isolate;
   }
+  /* Project */
+
+  header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid #f7f7f7;
+  }
+  .cmp-header {
+    width: 100%;
+    max-width: 1152px;
+    padding-inline: 12px;
+    margin-inline: auto;
+    padding-block: 12px;
+  }
+
+  .cmp-footer {
+    width: 100%;
+    max-width: 1152px;
+    padding-inline: 12px;
+    margin-inline: auto;
+    padding-block: 12px;
+  }
+  h1 {
+    font-family: var(--font-family);
+  }
+
+  .container {
+    width: 100%;
+  }
+  .cmp-container {
+    width: 100%;
+    max-width: 1152px;
+    padding-inline: 12px;
+    margin-inline: auto;
+    
+  }
+
+  .container--primary {
+    padding-block: 128px;
+  }
