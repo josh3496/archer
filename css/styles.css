@@ -211,4 +211,5 @@
     grid-area: content;
     padding: 15px;
     width: fit-content;
+    font-family: var(--font-family);
    }
