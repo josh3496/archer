@@ -173,7 +173,9 @@
   .container--primary {
     padding-block: 128px;
   }
-
+.grid {
+  margin-block-end: var(--space-2xl);
+}
   .grid .cmp-grid {
     display: grid;
   }
@@ -189,3 +191,24 @@
   .grid--horizontal-center .cmp-grid > * {
     text-align: center;
   }
+
+   /* Card */
+
+   .card{
+    display: grid;
+    grid-template-areas: 'img''content';
+    max-width: 365px;
+   }
+   .card__image {
+    grid-area: img;
+   }
+   .card__image img {
+    height: 150px;
+    object-fit: cover;
+    object-position: center center;
+   }
+   .card__content {
+    grid-area: content;
+    padding: 15px;
+    width: fit-content;
+   }
