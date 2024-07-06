@@ -118,7 +118,7 @@ h6 {
 /* Project */
 body {
   min-height: 100vh;
-  display: flex;
+  display: var(--flex);
   flex-direction: column;
 }
 
@@ -135,7 +135,7 @@ header {
   padding-inline: 12px;
   margin-inline: auto;
   padding-block: 24px;
-  display: flex;
+  display: var(--flex);
   align-items: center;
   justify-content: space-between;
 }
@@ -229,7 +229,6 @@ p {
 .text-center {
   text-align: center;
 }
-
 .container {
   width: 100%;
 }
