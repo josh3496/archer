@@ -51,6 +51,7 @@
   --space-2xl-3xl: clamp(4.5rem, 3.4565rem + 5.2174vi, 7.5rem);
 
   --flex: flex;
+  --grid: grid;
 }
 /*
   1. Use a more-intuitive box-sizing model.
@@ -287,8 +288,10 @@ p {
   width: fit-content;
   font-family: var(--font-family);
 }
-
 .flex {
   display: var(--flex);
   gap: 24px;
+}
+.grid {
+  display: var(--grid);
 }
