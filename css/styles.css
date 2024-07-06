@@ -22,6 +22,9 @@
     --heading-one-size: var(--step-5);
     --heading-two-size: var(--step-4);
     --heading-three-size: var(--step-3);
+    --heading-four-size: var(--step-2);
+    --heading-five-size: var(--step-1);
+    --heading-six-size: var(--step1);
 
     /* Body Copy */
     --body-size: var(--step-0);
@@ -157,7 +160,30 @@
     text-wrap: balance;
     margin-block-end: calc(var(--heading-three-size) * .5);
   }
-
+  h4, .h4 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: var(--heading-four-size);
+    line-height: calc(var(--heading-four-size) * 1.2);
+    text-wrap: balance;
+    margin-block-end: calc(var(--heading-four-size) * .5);
+  }
+  h5, .h5 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: var(--heading-five-size);
+    line-height: calc(var(--heading-five-size) * 1.2);
+    text-wrap: balance;
+    margin-block-end: calc(var(--heading-five-size) * .5); 
+  }
+h6, .h6 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: var(--heading-six-size);
+  line-height: calc(var(--heading-six-size) * 1.2);
+  text-wrap: balance;
+  margin-block-end: calc(var(--heading-six-size) * .5); 
+}
   p {
     font-family: var(--font-family);
     font-weight: 400;
