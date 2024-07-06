@@ -21,6 +21,7 @@
     /* Headings */
     --heading-one-size: var(--step-5);
     --heading-two-size: var(--step-4);
+    --heading-three-size: var(--step-3);
 
     /* Body Copy */
     --body-size: var(--step-0);
@@ -132,7 +133,7 @@
     padding-block: 24px;
   }
 
-  h1 {
+  h1, .h1 {
     font-family: var(--font-family);
     font-weight: 600;
     font-size: var(--heading-one-size);
@@ -140,7 +141,7 @@
     text-wrap: balance;
     margin-block-end: calc(var(--heading-one-size) * .5);
   }
-  h2 {
+  h2, .h2 {
     font-family: var(--font-family);
     font-weight: 600;
     font-size: var(--heading-two-size);
@@ -148,6 +149,15 @@
     text-wrap: balance;
     margin-block-end: calc(var(--heading-two-size) * .5);
   }
+  h3, .h3 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: var(--heading-three-size);
+    line-height: calc(var(--heading-three-size) * 1.2);
+    text-wrap: balance;
+    margin-block-end: calc(var(--heading-three-size) * .5);
+  }
+
   p {
     font-family: var(--font-family);
     font-weight: 400;
@@ -198,17 +208,20 @@
     display: grid;
     grid-template-areas: 'img''content';
     max-width: 365px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     padding: 15px;
+    border-radius: 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    gap: 24px;
    }
    .card__image {
     grid-area: img;
    }
    .card__image img {
     height: 150px;
-    max-width: 365px;
     object-fit: cover;
     object-position: center center;
+    border-radius: 12px;;
    }
    .card__content {
     grid-area: content;
