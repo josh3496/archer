@@ -198,18 +198,20 @@
     display: grid;
     grid-template-areas: 'img''content';
     max-width: 365px;
+    border: 1px solid #000;
+    padding: 15px;
    }
    .card__image {
     grid-area: img;
    }
    .card__image img {
     height: 150px;
+    max-width: 365px;
     object-fit: cover;
     object-position: center center;
    }
    .card__content {
     grid-area: content;
-    padding: 15px;
     width: fit-content;
     font-family: var(--font-family);
    }
