@@ -115,12 +115,23 @@
     max-width: 1152px;
     padding-inline: 12px;
     margin-inline: auto;
-    padding-block: 36px;
+    padding-block: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   .header-logo img{
     width: 75px;
     aspect-ratio: 1;
     border-radius: 50%;
+  }
+  .header-nav ul{
+    list-style: none;
+
+  }
+  .header-nav a {
+    text-decoration: none;
+    font-family: var(--font-family);
   }
   footer {
     /* background: linear-gradient(0deg, rgba(153,153,153,1) 0%, rgba(255,255,255,1) 100%); */
