@@ -34,25 +34,16 @@
   --body-size: var(--step-0);
 
   /* Spacing */
-  --space-3xs: clamp(0.3125rem, 0.3125rem + 0vi, 0.3125rem);
-  --space-2xs: clamp(0.5625rem, 0.5408rem + 0.1087vi, 0.625rem);
-  --space-xs: clamp(0.875rem, 0.8533rem + 0.1087vi, 0.9375rem);
-  --space-s: clamp(1.125rem, 1.0815rem + 0.2174vi, 1.25rem);
-  --space-m: clamp(1.6875rem, 1.6223rem + 0.3261vi, 1.875rem);
-  --space-l: clamp(2.25rem, 2.163rem + 0.4348vi, 2.5rem);
-  --space-xl: clamp(3.375rem, 3.2446rem + 0.6522vi, 3.75rem);
-  --space-2xl: clamp(4.5rem, 4.3261rem + 0.8696vi, 5rem);
-  --space-3xl: clamp(6.75rem, 6.4891rem + 1.3043vi, 7.5rem);
-
-  /* One-up pairs */
-  --space-3xs-2xs: clamp(0.3125rem, 0.2038rem + 0.5435vi, 0.625rem);
-  --space-2xs-xs: clamp(0.5625rem, 0.4321rem + 0.6522vi, 0.9375rem);
-  --space-xs-s: clamp(0.875rem, 0.7446rem + 0.6522vi, 1.25rem);
-  --space-s-m: clamp(1.125rem, 0.8641rem + 1.3043vi, 1.875rem);
-  --space-m-l: clamp(1.6875rem, 1.4049rem + 1.413vi, 2.5rem);
-  --space-l-xl: clamp(2.25rem, 1.7283rem + 2.6087vi, 3.75rem);
-  --space-xl-2xl: clamp(3.375rem, 2.8098rem + 2.8261vi, 5rem);
-  --space-2xl-3xl: clamp(4.5rem, 3.4565rem + 5.2174vi, 7.5rem);
+  --space-4xl: 128px;
+  --space-3xl: 96px;
+  --space-2xl: 72px;
+  --space-xl: 64px;
+  --space-l: 48px;
+  --space-m: 36px;
+  --space-s: 24px;
+  --space-xs: 12px;
+  --space-2xs: 8px;
+  --space-3xs: 4px;
 
   /* Containers */
   --container-background-primary-light: var(--white-100);
@@ -244,19 +235,31 @@ p {
 .cmp-container {
   width: 100%;
   max-width: 1152px;
-  padding-inline: 12px;
+  padding-inline: var(--space-xs);
   margin-inline: auto;
 }
 .container--primary-light {
-  padding-block: 128px;
+  padding-block: var(--space-4xl);
   background-color: var(--container-background-primary-light);
 }
+.container--secondary-light {
+  padding-block: var(--space-xl);
+  background-color: var(--container-background-secondary-light);
+}
+.container--tertiary-light {
+  padding-block: var(--space-xl);
+  background-color: var(--container-background-tertiary-light);
+}
 .container--primary-dark {
-  padding-block: 64px;
+  padding-block: var(--space-xl);
   background-color: var(--container-background-primary-dark);
 }
+.container--secondary-dark {
+  padding-block: var(--space-xl);
+  background-color: var(--container-background-secondary-dark);
+}
 .grid {
-  margin-block-end: var(--space-2xl);
+  margin-block-end: var(--space-s);
 }
 .grid .cmp-grid {
   display: grid;
